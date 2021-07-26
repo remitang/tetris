@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tetris</title>
+  <link rel="stylesheet" href="tetris.css" />
+</head>
+
+<body>
+  <section id="demo">
+    <h2 class="text-center">Demo Tetris</h2>
+
+    <div class="container">
+      <div class="flex justify-content-center">
+        <div id="grille"></div>
+
+        <div>
+          <div class="bg-commande">
+            <h3 class="text-center">Commandes</h3>
+            <div class="flex justify-content-around">
+              <span class="font-weight-bold">GAUCHE</span>
+              <span>Deplace à gauche</span>
+            </div>
+            <div class="flex justify-content-around">
+              <span class="font-weight-bold">DROITE</span>
+              <span>Deplace à droite</span>
+            </div>
+            <div class="flex justify-content-around">
+              <span class="font-weight-bold">BAS</span>
+              <span>Descente rapide</span>
+            </div>
+            <div class="flex justify-content-around">
+              <span class="font-weight-bold">HAUT</span>
+              <span>Pivoter la pièce</span>
+            </div>
+            <div class="flex justify-content-around">
+              <span class="font-weight-bold">SPACE</span><span>Descente maximal</span>
+            </div>
+
+          </div>
+          <div>
+            <div class="flex justify-content-between">
+              <span id="time">Temps écoulé : 0:00</span>
+              <span id="niveau">Niveau : 1</span>
+            </div>
+            <div class="flex justify-content-between">
+              <span id="score">Score : 0</span>
+              <span id="ligne">Lignes : 0</span>
+            </div>
+            <div class="text-center">
+              <button id="start" class="btn btn-primary">
+                START
+              </button>
+              <button id="restart" class="btn btn-info">
+                RESTART
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+  </section>
+
+
+</body>
+
+<script src="tetris.js"></script>
+
+</html>
