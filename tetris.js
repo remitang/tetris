@@ -329,11 +329,15 @@ document.getElementById("start").addEventListener("click", function () {
 document.getElementById("restart").addEventListener("click", function () {
   if (end) {
     end = false
+    timer = 300;
     grille = []
     ligne = 0;
     score = -10;
     niveau = 1;
     document.getElementById("grille").innerText = "";
+    document.getElementById("ligne").innerText = "Lignes : " + ligne;
+    document.getElementById("score").innerText = "Score : " + score;
+    document.getElementById("niveau").innerText = "Niveau : " + niveau;
     main();
     start();
     debut = false;
